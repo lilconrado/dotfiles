@@ -9,7 +9,9 @@ ZSH_THEME="robbyrussell"
 zstyle ':omz:update' mode auto 
 zstyle ':omz:update' frequency 13
 
-plugins=(git)
+plugins=(
+	git
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -29,6 +31,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
